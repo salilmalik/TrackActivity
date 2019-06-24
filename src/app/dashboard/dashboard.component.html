@@ -1,0 +1,8 @@
+<span *ngIf="isUserLoggedIn">
+  <h1>Welcome {{ accountName }}: Please visit the following link:</h1>
+  <a href="{{ stackoverflow }}" target="_blank"> Stackoverflow </a>
+  <app-behaviour></app-behaviour>
+</span>
+<span *ngIf="!isUserLoggedIn">
+  <h1>Please Login</h1>
+</span>
